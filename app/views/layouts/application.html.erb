@@ -15,11 +15,13 @@
     <% if user_signed_in? %>
       <div class="row">
         <div class="large-1 columns"></div>
-        <div class="large-9 large-offset-2 columns"><%= link_to 'Name list', listings_path %> | <%= link_to 'Log out', destroy_user_session_path, method: :delete %></div>
+        <div class="large-7 large-offset-4 columns"><%= link_to 'Name list', root_path %> | <%= link_to 'Log out', destroy_user_session_path, method: :delete %></div>
       </div>
+      <hr>
     <% end %>
     <div class="row">
       <div class="large-8 large-centered columns">
+ 	<%= render 'layouts/messages' %>
 	<%= yield %>
       </div>
     </div>

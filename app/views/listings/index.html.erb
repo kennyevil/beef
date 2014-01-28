@@ -1,10 +1,19 @@
 <div class="list">
-  <h4 class="subheading">People</h4>
-
-  <%= button_to 'New listing', new_listing_path, class: 'tiny button', :method => :get %>
+  <div class="row">
+    <div class="small-10 small-centered columns">
+      <div class="row">
+	<div class="small-6 columns">
+	  <h4 class="subheading">People</h4>
+	</div>
+	<div class="small-6 columns">
+	  <%= button_to 'New listing', new_listing_path, class: 'tiny button', :method => :get %>
+	</div>
+      </div>
+    </div>
+  </div>
 
   <div class="row">
-    <div class="large-10 large-centered columns">
+    <div class="small-10 small-centered columns">
       <ul class="small-block-grid-3">
         <li><b>Name</b></li>
         <li><b>Age</b></li>

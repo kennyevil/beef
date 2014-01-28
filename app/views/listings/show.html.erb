@@ -1,26 +1,47 @@
-<p id="notice"><%= notice %></p>
+<div class="list">
+  <div class="row">
+    <div class="small-10 small-centered columns">
+      <div class="row">
+        <div class="small-6 columns">
+	  <h6>First Name: </h6>
+        </div>
+        <div class="small-6 columns">
+	  <h6 class="subheading"><%= @listing.first_name %></h6>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="small-6 columns">
+	  <h6>Last name: </h6>
+        </div>
+        <div class="small-6 columns">
+	  <h6 class="subheading"><%= @listing.last_name %></h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-6 columns">
+          <h6>Date of birth: </h6>
+        </div>
+        <div class="small-6 columns">
+	  <h6 class="subheading"><%= @listing.dob %></h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-6 columns">
+	  <h6>Email: </h6>
+        </div>
+        <div class="small-6 columns">
+	  <h6 class="subheading"><%= @listing.email %></h6>
+        </div>
+      </div>
 
-<p>
-  <strong>First name:</strong>
-  <%= @listing.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @listing.last_name %>
-</p>
-
-<p>
-  <strong>Dob:</strong>
-  <%= @listing.dob %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @listing.email %>
-</p>
-
-<ul class="button-group [radius round]">
-  <li><%= button_to 'Edit', edit_listing_path(@listing), class: 'tiny button' %></li>
-  <li><%= button_to 'Destroy', listing_path(@listing), method: :delete, data: { confirm: "Are you sure?" }, class: 'tiny button' %></li>
-<ul>
+      <div class="row">
+        <div class="small-12 columns">
+  	  <ul class="button-group [radius round]">
+	    <li><%= button_to 'Edit', edit_listing_path(@listing), class: 'tiny button', method: :get %></li>
+	    <li><%= button_to 'Destroy', listing_path(@listing), method: :delete, data: { confirm: "Are you sure?" }, class: 'tiny button' %></li>
+	  </ul>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>

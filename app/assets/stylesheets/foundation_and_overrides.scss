@@ -7,6 +7,7 @@
 
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
+@import url(http://font.googleapis.com/css?family=Rambla);
 
 // $experimental: true;
 
@@ -35,9 +36,9 @@
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+$body-bg: #ddd;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Rambla", sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -388,8 +389,8 @@
 
 // We use these to style the fieldset border and spacing.
 // $fieldset-border-style: solid;
-// $fieldset-border-width: 1px;
-// $fieldset-border-color: #ddd;
+$fieldset-border-width: 2px;
+$fieldset-border-color: #fff;
 // $fieldset-padding: rem-calc(20);
 // $fieldset-margin: rem-calc(18 0);
 
@@ -1083,7 +1084,7 @@
 // $include-open-sans: true;
 
 // We use these to control header font styles
-// $header-font-family: join("Open Sans", $body-font-family);
+$header-font-family: join("Rambla", $body-font-family);
 // $header-font-weight: 300;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -1135,7 +1136,7 @@
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
 // $hr-border-style: solid;
-// $hr-border-color: #ddd;
+$hr-border-color: #fff;
 // $hr-margin: rem-calc(20);
 
 // We use these to style lists
