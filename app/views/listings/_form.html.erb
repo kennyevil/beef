@@ -1,33 +1,27 @@
 <%= form_for(@listing) do |f| %>
-  <% if @listing.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
 
-      <ul>
-      <% @listing.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
-  </div>
-  <div class="field">
-    <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="field">
-    <%= f.label :dob %><br>
-    <%= f.text_field :dob %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
+  <fieldset>
+    <legend>Listing</legend>
+      <div class="row">
+	<div class="large-12 large-centered columns">
+	  <div class="row">
+	    <div class="large-6 columns">
+    	      <%= f.text_field :first_name %>
+  	    </div>
+	    <div class="large-6 columns">
+    	      <%= f.text_field :last_name %>
+      	    </div>
+	  </div>
+          <div class="row">
+  	    <div class="large-4 columns">
+    	      <%= f.text_field :dob, label: 'Date of Birth' %>
+  	    </div>
+  	    <div class="large-8 columns">
+    	      <%= f.text_field :email %>
+	    </div>
+      	  </div>
+	</div>
+      </div>
     <%= f.submit %>
-  </div>
+  </fieldset>
 <% end %>

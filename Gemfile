@@ -17,6 +17,7 @@ gem 'jquery-ui-rails', github: 'joliss/jquery-ui-rails'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 gem 'foundation-rails', github: 'zurb/foundation-rails'
+gem 'foundation_rails_helper', git: 'https://github.com/sgruhier/foundation_rails_helper.git'
 
 gem 'mongoid', github: 'mongoid/mongoid'
 

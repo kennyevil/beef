@@ -23,6 +23,15 @@ GIT
       railties (>= 3.1.0)
       sass (>= 3.2.0)
 
+GIT
+  remote: https://github.com/sgruhier/foundation_rails_helper.git
+  revision: 0c31a12c7d45a855afb60ebba2410fa1cf936d32
+  specs:
+    foundation_rails_helper (0.4)
+      actionpack (>= 4.0)
+      activemodel (>= 4.0)
+      railties (>= 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -180,6 +189,7 @@ DEPENDENCIES
   capybara (= 2.1.0)
   coffee-rails (= 4.0.1)
   foundation-rails!
+  foundation_rails_helper!
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
   jquery-ui-rails!

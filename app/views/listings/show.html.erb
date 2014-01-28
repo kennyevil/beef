@@ -20,5 +20,7 @@
   <%= @listing.email %>
 </p>
 
-<%= link_to 'Edit', edit_listing_path(@listing) %> |
-<%= link_to 'Destroy', listing_path(@listing), method: :delete, data: "Are you sure?" %>
+<ul class="button-group [radius round]">
+  <li><%= button_to 'Edit', edit_listing_path(@listing), class: 'tiny button' %></li>
+  <li><%= button_to 'Destroy', listing_path(@listing), method: :delete, data: { confirm: "Are you sure?" }, class: 'tiny button' %></li>
+<ul>
