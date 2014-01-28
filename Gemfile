@@ -19,6 +19,8 @@ gem 'jbuilder', '1.0.2'
 gem 'foundation-rails', github: 'zurb/foundation-rails'
 gem 'foundation_rails_helper', git: 'https://github.com/sgruhier/foundation_rails_helper.git'
 
+gem 'devise', github: 'plataformatec/devise'
+
 gem 'mongoid', github: 'mongoid/mongoid'
 
 group :doc do
