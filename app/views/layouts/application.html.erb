@@ -12,19 +12,17 @@
   </head>
 
   <body>
-
-    <div class="row">
-      <div class="large-1 columns"></div>
-      <div class="large-9 large-offset-2 columns"><%= link_to 'Name list', listings_path %> | <%= link_to 'Log out', destroy_user_session_path, method: :delete %></div>
-    </div>
+    <% if user_signed_in? %>
+      <div class="row">
+        <div class="large-1 columns"></div>
+        <div class="large-9 large-offset-2 columns"><%= link_to 'Name list', listings_path %> | <%= link_to 'Log out', destroy_user_session_path, method: :delete %></div>
+      </div>
+    <% end %>
     <div class="row">
       <div class="large-8 large-centered columns">
 	<%= yield %>
       </div>
     </div>
-    <% if user_signed_in? %>
-      <h6>yes</h6>
-    <% end %>
     <%= javascript_include_tag "application" %>
   </body>
 </html>
