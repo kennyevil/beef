@@ -1,0 +1,27 @@
+<h1>People</h1>
+
+<%= button_to 'New listing', new_listing_path, class: 'small button', :method => :get %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>	    
+      <th>Age</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @listings.each do |listing| %>
+      <tr>
+        <td><%= link_to "#{listing.first_name} #{listing.last_name}", listing %></td>
+        <td><%= (Date.today - listing.dob).to_i / 365 %></td>
+        <td><%= listing.email %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Listing', new_listing_path %>
